@@ -6,20 +6,37 @@ public class FamilyRental implements Rental {
 
 	public Double fee;
 	
-	Integer bikesHour;
-	Integer bikesDay;
-	Integer bikesWeek;
-	
-	Integer hours;
-	Integer days;
-	Integer weeks;
+	private Integer bikesHour;
+	private Integer bikesDay;
+	private Integer bikesWeek;
 
-	Integer costPerHour;
-	Integer costPerDay;
-	Integer costPerWeek;
+	private Integer hours;
+	private Integer days;
+	private Integer weeks;
 
-	Integer discount;
-	
+	private Integer costPerHour = 5;
+	private Integer costPerDay = 20;
+	private Integer costPerWeek = 60;
+
+	private Integer discount;
+
+	public FamilyRental(HashMap<String, Integer> details) {
+		this.bikesHour = details.get("bikesHour");
+		this.bikesDay = details.get("bikesDay");
+		this.bikesWeek = details.get("bikesWeek");
+
+		this.hours = details.get("hours");
+		this.days = details.get("days");
+		this.weeks = details.get("weeks");
+
+		this.costPerHour = details.get("costPerHour");
+		this.costPerDay = details.get("costPerDay");
+		this.costPerWeek = details.get("costPerWeek");
+
+		this.discount = details.get("discount");
+		this.fee = calculateFee();
+	}
+
 	@Override
 	public boolean checkInfo() {
 		Integer qty = bikesHour+bikesDay+bikesWeek;
@@ -58,22 +75,5 @@ public class FamilyRental implements Rental {
 										+ ".\n Total cost: " + fee
 				);
 		return returnString;
-	}
-	
-	public FamilyRental(HashMap<String, Integer> details) {
-		this.bikesHour = details.get("bikesHour");
-		this.bikesDay = details.get("bikesDay");
-		this.bikesWeek = details.get("bikesWeek");
-		
-		this.hours = details.get("hours");
-		this.days = details.get("days");
-		this.weeks = details.get("weeks");
-
-		this.costPerHour = details.get("costPerHour");
-		this.costPerDay = details.get("costPerDay");
-		this.costPerWeek = details.get("costPerWeek");
-		
-		this.discount = details.get("discount");
-		this.fee = calculateFee();
 	}
 }

@@ -6,12 +6,18 @@ public class RentHour implements Rental {
 
 	public Double fee;
 	
-	Integer bikes;
+	private Integer bikes;
 	
-	Integer hours;
+	private Integer hours;
 	
-	Integer costPerHour;
-	
+	private Integer costPerHour = 5;
+
+	public RentHour(HashMap<String, Integer> details) {
+		this.bikes = details.get("bikes");
+		this.hours = details.get("hours");
+		this.fee = calculateFee();
+	}
+
 	@Override
 	public boolean checkInfo() {
 		// TODO Auto-generated method stub
@@ -33,13 +39,4 @@ public class RentHour implements Rental {
 	public String toString() {
 		return new String("You will rent " + bikes + " bikes for " + hours + " hours for a total fee of " + fee);
 	}
-	
-	public RentHour(HashMap<String, Integer> details) {
-		this.bikes = details.get("bikes");
-		this.hours = details.get("hours");
-		this.costPerHour = details.get("costPerHour");
-		this.fee = calculateFee();
-	}
-	
-
 }

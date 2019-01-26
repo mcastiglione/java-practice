@@ -5,13 +5,19 @@ import java.util.HashMap;
 public class RentWeek implements Rental {
 	
 	public Double fee;
-	
-	Integer bikes;
-	
-	Integer weeks;
-	
-	Integer costPerWeek;
-	
+
+	private Integer bikes;
+
+	private Integer weeks;
+
+	private Integer costPerWeek = 60;
+
+	public RentWeek(HashMap<String, Integer> details) {
+		this.bikes = details.get("bikes");
+		this.weeks = details.get("weeks");
+		this.fee = calculateFee();
+	}
+
 	@Override
 	public boolean checkInfo() {
 		// TODO Auto-generated method stub
@@ -31,12 +37,5 @@ public class RentWeek implements Rental {
 	@Override
 	public String toString() {
 		return new String("You will rent " + bikes + " bikes for " + weeks + " weeks for a total fee of " + fee);
-	}
-	
-	public RentWeek(HashMap<String, Integer> details) {
-		this.bikes = details.get("bikes");
-		this.weeks = details.get("weeks");
-		this.costPerWeek = details.get("costPerWeek");
-		this.fee = calculateFee();
 	}
 }

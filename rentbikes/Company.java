@@ -1,6 +1,10 @@
 package com.intivefdv.backend;
 
-import com.intivefdv.backend.*;
+import com.intivefdv.backend.Rental;
+import com.intivefdv.backend.RentHour;
+import com.intivefdv.backend.RentDay;
+import com.intivefdv.backend.RentWeek;
+import com.intivefdv.backend.FamilyRental;
 
 import java.util.HashMap;
 
@@ -11,15 +15,10 @@ public class Company {
 
 		HashMap data;
 
-		Integer costPerHour = 5;
-		Integer costPerDay = 20;
-		Integer costPerWeek = 60;
-
 		//Case hour
 		data = new HashMap<String,Integer>();
 		data.put("bikes", 1);
 		data.put("hours", 1);
-		data.put("costPerHour", costPerHour);
 
 		rental = new RentHour(data);
 		System.out.println(rental.toString());
@@ -29,7 +28,6 @@ public class Company {
 		data = new HashMap<String,Integer>();
 		data.put("bikes", 1);
 		data.put("days", 2);
-		data.put("costPerDay", costPerDay);
 
 		rental = new RentDay(data);
 		System.out.println(rental.toString());
@@ -39,7 +37,6 @@ public class Company {
 		data = new HashMap<String,Integer>();
 		data.put("bikes", 1);
 		data.put("weeks", 1);
-		data.put("costPerWeek", costPerWeek);
 
 		rental = new RentWeek(data);
 		System.out.println(rental.toString());
@@ -55,10 +52,6 @@ public class Company {
 		data.put("hours", 3);
 		data.put("days", 5);
 		data.put("weeks", 10);
-
-		data.put("costPerHour", costPerHour);
-		data.put("costPerDay", costPerDay);
-		data.put("costPerWeek", costPerWeek);
 
 		data.put("discount", 10);
 
