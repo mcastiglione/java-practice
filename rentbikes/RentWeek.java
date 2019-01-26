@@ -3,8 +3,8 @@ package com.intivefdv.backend;
 import java.util.HashMap;
 
 public class RentWeek implements Rental {
-	
-	public Double fee;
+
+	private Double fee;
 
 	private Integer bikes;
 
@@ -12,10 +12,9 @@ public class RentWeek implements Rental {
 
 	private Integer costPerWeek = 60;
 
-	public RentWeek(HashMap<String, Integer> details) {
-		this.bikes = details.get("bikes");
-		this.weeks = details.get("weeks");
-		this.fee = calculateFee();
+	public RentWeek(int bikes, int weeks) {
+		this.bikes = bikes;
+		this.weeks = weeks;
 	}
 
 	@Override
@@ -25,13 +24,24 @@ public class RentWeek implements Rental {
 	}
 
 	@Override
-	public Double calculateFee() {
+	public void calculateFee() {
 		this.fee = bikes.doubleValue()*weeks.doubleValue()*costPerWeek.doubleValue();
+	}
+
+	public Double getFee() {
 		return fee;
 	}
 	
-	public Double getFee() {
-		return fee;
+	public Integer getBikes() {
+		return bikes;
+	}
+	
+	public Integer getWeeks() {
+		return weeks;
+	}
+	
+	public Integer getCostPerWeek() {
+		return costPerWeek;
 	}
 
 	@Override

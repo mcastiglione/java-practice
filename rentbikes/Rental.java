@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 interface Rental {
 	public boolean checkInfo();
-	public Double calculateFee();
+	public void calculateFee();
 	public Double getFee();
 
 }

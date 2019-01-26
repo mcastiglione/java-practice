@@ -4,18 +4,17 @@ import java.util.HashMap;
 
 public class RentHour implements Rental {
 
-	public Double fee;
-	
+	private Double fee;
+
 	private Integer bikes;
-	
+
 	private Integer hours;
-	
+
 	private Integer costPerHour = 5;
 
-	public RentHour(HashMap<String, Integer> details) {
-		this.bikes = details.get("bikes");
-		this.hours = details.get("hours");
-		this.fee = calculateFee();
+	public RentHour(int bikes, int hours) {
+		this.bikes = bikes;
+		this.hours = hours;
 	}
 
 	@Override
@@ -25,14 +24,25 @@ public class RentHour implements Rental {
 	}
 
 	@Override
-	public Double calculateFee() {
+	public void calculateFee() {
 		this.fee = bikes.doubleValue()*hours.doubleValue()*costPerHour.doubleValue();
-		return fee;
 	}
 
 	@Override
 	public Double getFee() {
 		return fee;
+	}
+	
+	public Integer getBikes() {
+		return bikes;
+	}
+	
+	public Integer getHours() {
+		return hours;
+	}
+	
+	public Integer getCostPerHour() {
+		return costPerHour;
 	}
 
 	@Override
