@@ -8,10 +8,12 @@ import com.javapractice.Rental;
 
 public class Company {
     private static Rental rental;
+    private static ArrayList<RentData> rentals;
+    private static RentalFactory rentalFactory;
 
     public static void main(String[] args) {
 
-        RentalFactory rentalFactory = new RentalFactory();
+        rentalFactory = new RentalFactory();
 
         //Case hour
         rental = rentalFactory.newRental("bike", "hour", 1,1);
@@ -23,13 +25,13 @@ public class Company {
         rental = rentalFactory.newRental( "bike", "week", 1,1);
 
         //Case family
-        ArrayList<RentData> rentals = new ArrayList<RentData>();
+        rentals = new ArrayList<RentData>();
 
-        RentData fRentalHourData = new RentData("bike", "hour", 1,3);
+        RentData fRentalHourData = new RentData("car", "hour", 1,3);
 
         RentData fRentalDayData = new RentData("bike", "day", 1,5);
 
-        RentData fRentalWeekData = new RentData("bike", "week", 2,10);
+        RentData fRentalWeekData = new RentData("car", "week", 2,10);
 
         rentals.add(fRentalHourData);
         rentals.add(fRentalDayData);

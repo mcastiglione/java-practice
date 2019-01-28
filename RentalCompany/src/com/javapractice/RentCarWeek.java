@@ -8,7 +8,7 @@ public class RentCarWeek implements Rental {
 
     private Integer weeks;
 
-    private Integer costPerWeek = 60;
+    private Integer costPerWeek = 300;
 
     public RentCarWeek(int bikes, int weeks) {
         this.bikes = bikes;

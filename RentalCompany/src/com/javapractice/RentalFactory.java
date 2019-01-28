@@ -103,7 +103,15 @@ public class RentalFactory {
 
         familyRental = new FamilyRental(rentals, discount);
         familyRental.calculateFee();
+        boolean isValid = familyRental.checkInfo();
 
-        return familyRental;
+        if (isValid) {
+            return familyRental;
+        } else {
+            Rental emptyRental = null;
+            return emptyRental;
+        }
+
+
     }
 }

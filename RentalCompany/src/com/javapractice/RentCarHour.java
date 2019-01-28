@@ -8,7 +8,7 @@ public class RentCarHour implements Rental {
 
     private Integer hours;
 
-    private Integer costPerHour = 5;
+    private Integer costPerHour = 20;
 
     public RentCarHour(int bikes, int hours) {
         this.bikes = bikes;
