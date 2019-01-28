@@ -1,7 +1,5 @@
 package com.intivefdv.backend;
 
-import java.util.HashMap;
-
 public class RentDay implements Rental {
 
 	private Double fee;
@@ -30,23 +28,23 @@ public class RentDay implements Rental {
 
 	@Override
 	public Double getFee() {
-		return fee;
+		return this.fee;
 	}
-	
-	public Integer getBikes() {
-		return bikes;
+
+	public Integer getQty() {
+		return this.bikes;
 	}
-	
+
 	public Integer getDays() {
-		return days;
+		return this.days;
 	}
-	
+
 	public Integer getCostPerDay() {
-		return costPerDay;
+		return this.costPerDay;
 	}
-	
+
 	@Override
 	public String toString() {
-		return new String("You will rent " + bikes + " bikes for " + days + " days for a total fee of " + fee);
+		return new String("You will rent " + this.bikes + " bikes for " + this.days + " days for a total fee of " + this.fee);
 	}
 }

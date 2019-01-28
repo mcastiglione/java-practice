@@ -1,7 +1,5 @@
 package com.intivefdv.backend;
 
-import java.util.HashMap;
-
 public class RentWeek implements Rental {
 
 	private Double fee;
@@ -29,23 +27,23 @@ public class RentWeek implements Rental {
 	}
 
 	public Double getFee() {
-		return fee;
+		return this.fee;
 	}
-	
-	public Integer getBikes() {
-		return bikes;
+
+	public Integer getQty() {
+		return this.bikes;
 	}
-	
+
 	public Integer getWeeks() {
-		return weeks;
+		return this.weeks;
 	}
-	
+
 	public Integer getCostPerWeek() {
-		return costPerWeek;
+		return this.costPerWeek;
 	}
 
 	@Override
 	public String toString() {
-		return new String("You will rent " + bikes + " bikes for " + weeks + " weeks for a total fee of " + fee);
+		return new String("You will rent " + this.bikes + " bikes for " + this.weeks + " weeks for a total fee of " + this.fee);
 	}
 }
