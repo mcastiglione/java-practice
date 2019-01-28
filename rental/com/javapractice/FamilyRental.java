@@ -1,7 +1,8 @@
-package com.intivefdv.backend;
+package com.javapractice;
 
 import java.util.ArrayList;
-import com.intivefdv.backend.Rental;
+
+import com.javapractice.Rental;
 
 public class FamilyRental implements Rental {
 
@@ -11,7 +12,7 @@ public class FamilyRental implements Rental {
 
 	private Integer discount;
 	
-	private Integer Qty = 0;
+	private Integer rentalQty = 0;
 
 	public FamilyRental(ArrayList<Rental> rentals, int discount) {
 		this.rentals = rentals;
@@ -20,7 +21,7 @@ public class FamilyRental implements Rental {
 
 	@Override
 	public boolean checkInfo() {
-		if (Qty > 5 || Qty < 3) {
+		if (rentalQty > 5 || rentalQty < 3) {
 			return false;
 		} else {
 			return true;
@@ -32,7 +33,7 @@ public class FamilyRental implements Rental {
 		rentals.stream().forEach(y->this.fee += y.getFee());
 		this.fee = this.fee - (this.fee/100*discount.doubleValue());
 		
-		rentals.stream().forEach(y->this.Qty += y.getQty());
+		rentals.stream().forEach(y->this.rentalQty += y.getRentalQty());
 	}
 
 	@Override
@@ -40,13 +41,27 @@ public class FamilyRental implements Rental {
 		return this.fee;
 	}
 
-	public Integer getQty() {
-		return this.Qty;
+	public Integer getTime() {
+		// TODO Auto-generated method stub
+		return null;
 	}
-
+	
 	@Override
 	public String toString() {
 		String returnString = new String("Family Rental cost: " + this.fee);
 		return returnString;
 	}
+
+	@Override
+	public Integer getRentalQty() {
+		// TODO Auto-generated method stub
+		return rentalQty;
+	}
+
+	@Override
+	public void readConfig(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
