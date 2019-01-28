@@ -2,9 +2,6 @@ package com.intivefdv.backend;
 
 import java.util.ArrayList;
 import com.intivefdv.backend.Rental;
-import com.intivefdv.backend.RentHour;
-import com.intivefdv.backend.RentDay;
-import com.intivefdv.backend.RentWeek;
 
 public class FamilyRental implements Rental {
 
@@ -13,6 +10,8 @@ public class FamilyRental implements Rental {
 	private ArrayList<Rental> rentals;
 
 	private Integer discount;
+	
+	private Integer Qty = 0;
 
 	public FamilyRental(ArrayList<Rental> rentals, int discount) {
 		this.rentals = rentals;
@@ -21,13 +20,19 @@ public class FamilyRental implements Rental {
 
 	@Override
 	public boolean checkInfo() {
-		return true;
+		if (Qty > 5 || Qty < 3) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 
 	@Override
 	public void calculateFee() {
 		rentals.stream().forEach(y->this.fee += y.getFee());
 		this.fee = this.fee - (this.fee/100*discount.doubleValue());
+		
+		rentals.stream().forEach(y->this.Qty += y.getQty());
 	}
 
 	@Override
@@ -35,9 +40,13 @@ public class FamilyRental implements Rental {
 		return this.fee;
 	}
 
+	public Integer getQty() {
+		return this.Qty;
+	}
+
 	@Override
 	public String toString() {
-		String returnString = new String("Family Rental total cost: " + this.fee);
+		String returnString = new String("Family Rental cost: " + this.fee);
 		return returnString;
 	}
 }

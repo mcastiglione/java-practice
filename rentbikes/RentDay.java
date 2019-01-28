@@ -1,7 +1,5 @@
 package com.intivefdv.backend;
 
-import java.util.HashMap;
-
 public class RentDay implements Rental {
 
 	private Double fee;
@@ -33,7 +31,7 @@ public class RentDay implements Rental {
 		return this.fee;
 	}
 
-	public Integer getBikes() {
+	public Integer getQty() {
 		return this.bikes;
 	}
 

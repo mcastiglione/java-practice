@@ -7,7 +7,6 @@ import com.intivefdv.backend.RentWeek;
 import com.intivefdv.backend.FamilyRental;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Company {
 	private static Rental rental;
