@@ -12,7 +12,6 @@ public class Company {
     public static void main(String[] args) {
 
         RentalFactory rentalFactory = new RentalFactory();
-        FamilyRentalFactory familyRentalFactory = new FamilyRentalFactory();
 
         //Case hour
         rental = rentalFactory.newRental("bike", "hour", 1,1);
@@ -38,7 +37,7 @@ public class Company {
 
         int discount = 30;
 
-        rental = familyRentalFactory.newRental(rentals, discount);
+        rental = rentalFactory.newFamilyRental(rentals, discount);
 
         System.out.println(rental);
     }
