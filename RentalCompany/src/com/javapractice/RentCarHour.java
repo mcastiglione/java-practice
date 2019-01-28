@@ -10,9 +10,8 @@ public class RentCarHour implements Rental {
 
     private Integer costPerHour = 20;
 
-    public RentCarHour(int bikes, int hours) {
-        this.bikes = bikes;
-        this.hours = hours;
+    public RentCarHour() {
+
     }
 
     @Override
@@ -21,9 +20,10 @@ public class RentCarHour implements Rental {
         return false;
     }
 
-    @Override
-    public void calculateFee() {
-        this.fee = bikes.doubleValue()*hours.doubleValue()*costPerHour.doubleValue();
+    public void calculateFee(int bikes, int hours) {
+        this.bikes = bikes;
+        this.hours = hours;
+        this.fee = this.bikes.doubleValue()*this.hours.doubleValue()*this.costPerHour.doubleValue();
     }
 
     @Override

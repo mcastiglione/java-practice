@@ -10,9 +10,8 @@ public class RentBikeWeek implements Rental {
 
     private Integer costPerWeek = 60;
 
-    public RentBikeWeek(int bikes, int weeks) {
-        this.bikes = bikes;
-        this.weeks = weeks;
+    public RentBikeWeek() {
+
     }
 
     @Override
@@ -21,9 +20,10 @@ public class RentBikeWeek implements Rental {
         return false;
     }
 
-    @Override
-    public void calculateFee() {
-        this.fee = bikes.doubleValue()*weeks.doubleValue()*costPerWeek.doubleValue();
+    public void calculateFee(int bikes, int weeks) {
+        this.bikes = bikes;
+        this.weeks = weeks;
+        this.fee = this.bikes.doubleValue()*this.weeks.doubleValue()*costPerWeek.doubleValue();
     }
 
     public Double getFee() {

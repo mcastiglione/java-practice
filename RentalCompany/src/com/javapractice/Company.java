@@ -2,13 +2,10 @@ package com.javapractice;
 
 import java.util.ArrayList;
 
-import com.javapractice.FamilyRental;
-import com.javapractice.RentalFactory;
-import com.javapractice.Rental;
-
 public class Company {
     private static Rental rental;
-    private static ArrayList<RentData> rentals;
+    private static FamilyRental fRental;
+    private static ArrayList<Rental> rentals;
     private static RentalFactory rentalFactory;
 
     public static void main(String[] args) {
@@ -16,31 +13,38 @@ public class Company {
         rentalFactory = new RentalFactory();
 
         //Case hour
-        rental = rentalFactory.newRental("bike", "hour", 1,1);
+        rental = rentalFactory.newRental("bike", "hour");
+        rental.calculateFee(1,1);
 
         //Case day
-        rental = rentalFactory.newRental("bike", "day", 1,2);
+        rental = rentalFactory.newRental("bike", "day");
+        rental.calculateFee(1,2);
 
         //Case week
-        rental = rentalFactory.newRental( "bike", "week", 1,1);
+        rental = rentalFactory.newRental( "bike", "week");
+        rental.calculateFee(1,1);
 
         //Case family
-        rentals = new ArrayList<RentData>();
+        rentals = new ArrayList<Rental>();
 
-        RentData fRentalHourData = new RentData("car", "hour", 1,3);
+        Rental fRentalHour = rentalFactory.newRental("car", "hour");
+        fRentalHour.calculateFee(1,3);
 
-        RentData fRentalDayData = new RentData("bike", "day", 1,5);
+        Rental fRentalDay = rentalFactory.newRental("bike", "day");
+        fRentalDay.calculateFee(1,5);
 
-        RentData fRentalWeekData = new RentData("car", "week", 2,10);
+        Rental fRentalWeek = rentalFactory.newRental("car", "week");
+        fRentalWeek.calculateFee(2,10);
 
-        rentals.add(fRentalHourData);
-        rentals.add(fRentalDayData);
-        rentals.add(fRentalWeekData);
+        rentals.add(fRentalHour);
+        rentals.add(fRentalDay);
+        rentals.add(fRentalWeek);
 
         int discount = 30;
 
-        rental = rentalFactory.newFamilyRental(rentals, discount);
+        fRental = new RentFamily();
+        fRental.calculateFee(rentals, discount);
 
-        System.out.println(rental);
+        System.out.println(fRental);
     }
 }
