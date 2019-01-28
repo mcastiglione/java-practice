@@ -11,7 +11,7 @@ public class FamilyRental implements Rental {
 	private Double fee = 0.0;
 
 	private ArrayList<Rental> rentals;
-	
+
 	private Integer discount;
 
 	public FamilyRental(ArrayList<Rental> rentals, int discount) {
@@ -26,18 +26,18 @@ public class FamilyRental implements Rental {
 
 	@Override
 	public void calculateFee() {
-		rentals.stream().forEach(y->fee += y.getFee());
-		fee = fee - (fee/100*discount.doubleValue());
+		rentals.stream().forEach(y->this.fee += y.getFee());
+		this.fee = this.fee - (this.fee/100*discount.doubleValue());
 	}
 
 	@Override
 	public Double getFee() {
-		return fee;
+		return this.fee;
 	}
 
 	@Override
 	public String toString() {
-		String returnString = new String("Family Rental total cost: " + fee);
+		String returnString = new String("Family Rental total cost: " + this.fee);
 		return returnString;
 	}
 }
