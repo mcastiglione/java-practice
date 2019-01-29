@@ -1,5 +1,10 @@
 package com.javapractice;
 
+import com.javapractice.model.Rental;
+import com.javapractice.model.FamilyRental;
+import com.javapractice.utility.RentalFactory;
+import com.javapractice.utility.RentFamily;
+
 import java.util.ArrayList;
 
 public class Company {
