@@ -1,6 +1,7 @@
 package com.javapractice.model.bike;
 
 import com.javapractice.model.Rental;
+import com.javapractice.utility.ReadProperties;
 
 public class RentBikeDay implements Rental {
 
@@ -10,10 +11,10 @@ public class RentBikeDay implements Rental {
 
     private Integer days;
 
-    private Integer costPerDay = 20;
+    private Integer costPerDay;
 
     public RentBikeDay() {
-
+        this.costPerDay = Integer.parseInt(ReadProperties.getInstance().getProperty("bike.day"));
     }
 
     @Override

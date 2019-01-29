@@ -1,9 +1,7 @@
 package com.javapractice.utility;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
 import java.util.Properties;
 
 
@@ -42,6 +40,8 @@ public class ConfigReader {
         } catch (Exception e) {
             System.out.println("Exception: " + e);
         }
+        System.out.println(result);
+        System.out.println(property);
         return result;
     }
 
