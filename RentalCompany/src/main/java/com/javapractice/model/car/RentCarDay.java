@@ -14,7 +14,7 @@ public class RentCarDay implements Rental {
     private Integer costPerDay;
 
     public RentCarDay() {
-        this.costPerDay = Integer.parseInt(ReadProperties.getInstance().getProperty("car.day"));
+        this.costPerDay = Integer.parseInt(file.getProperty("car.day"));
     }
 
     @Override

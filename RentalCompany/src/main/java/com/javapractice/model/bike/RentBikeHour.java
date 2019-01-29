@@ -14,7 +14,7 @@ public class RentBikeHour implements Rental {
     private Integer costPerHour;
 
     public RentBikeHour() {
-        this.costPerHour = Integer.parseInt(ReadProperties.getInstance().getProperty("bike.hour"));
+        this.costPerHour = Integer.parseInt(file.getProperty("bike.hour"));
     }
 
     @Override

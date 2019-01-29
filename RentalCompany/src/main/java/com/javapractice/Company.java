@@ -18,27 +18,27 @@ public class Company {
         rentalFactory = new RentalFactory();
 
         //Case hour
-        rental = rentalFactory.newRental("bike", "hour");
+        rental = rentalFactory.getRental("bike", "hour");
         rental.calculateFee(1,1);
 
         //Case day
-        rental = rentalFactory.newRental("bike", "day");
+        rental = rentalFactory.getRental("bike", "day");
         rental.calculateFee(1,2);
 
         //Case week
-        rental = rentalFactory.newRental( "bike", "week");
+        rental = rentalFactory.getRental( "bike", "week");
         rental.calculateFee(1,1);
 
         //Case family
         rentals = new ArrayList<Rental>();
 
-        Rental fRentalHour = rentalFactory.newRental("car", "hour");
+        Rental fRentalHour = rentalFactory.getRental("car", "hour");
         fRentalHour.calculateFee(1,3);
 
-        Rental fRentalDay = rentalFactory.newRental("bike", "day");
+        Rental fRentalDay = rentalFactory.getRental("bike", "day");
         fRentalDay.calculateFee(1,5);
 
-        Rental fRentalWeek = rentalFactory.newRental("car", "week");
+        Rental fRentalWeek = rentalFactory.getRental("car", "week");
         fRentalWeek.calculateFee(2,10);
 
         rentals.add(fRentalHour);

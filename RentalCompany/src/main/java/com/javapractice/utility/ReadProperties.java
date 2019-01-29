@@ -9,11 +9,13 @@ import java.util.Set;
 
 public class ReadProperties {
 
-    private static final Properties props = new Properties();
+    private static Properties props;
 
     static {
-        InputStream in = ReadProperties.class.getClass().getClassLoader().getResourceAsStream("config.properties");
+        InputStream in = null;
         try {
+            props = new Properties();
+            in = ClassLoader.class.getResourceAsStream("/config.properties");
             props.load(in);
         } catch (IOException e) {
             System.out.println(e.getMessage());
