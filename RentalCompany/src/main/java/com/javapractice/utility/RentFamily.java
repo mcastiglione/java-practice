@@ -1,4 +1,7 @@
-package com.javapractice;
+package com.javapractice.utility;
+
+import com.javapractice.model.FamilyRental;
+import com.javapractice.model.Rental;
 
 import java.util.ArrayList;
 

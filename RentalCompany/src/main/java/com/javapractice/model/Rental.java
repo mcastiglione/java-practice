@@ -1,6 +1,6 @@
-package com.javapractice;
+package com.javapractice.model;
 
-interface Rental {
+public interface Rental {
     public boolean checkInfo();
     public void calculateFee(int vehicleQty, int timeQty);
     public Double getFee();

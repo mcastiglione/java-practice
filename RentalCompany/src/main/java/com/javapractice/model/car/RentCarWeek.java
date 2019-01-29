@@ -1,4 +1,6 @@
-package com.javapractice;
+package com.javapractice.model.car;
+
+import com.javapractice.model.Rental;
 
 public class RentCarWeek implements Rental {
 

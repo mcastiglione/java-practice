@@ -1,5 +1,12 @@
-package com.javapractice;
+package com.javapractice.utility;
 
+import com.javapractice.model.Rental;
+import com.javapractice.model.bike.RentBikeHour;
+import com.javapractice.model.bike.RentBikeDay;
+import com.javapractice.model.bike.RentBikeWeek;
+import com.javapractice.model.car.RentCarHour;
+import com.javapractice.model.car.RentCarDay;
+import com.javapractice.model.car.RentCarWeek;
 import java.util.ArrayList;
 
 public class RentalFactory {

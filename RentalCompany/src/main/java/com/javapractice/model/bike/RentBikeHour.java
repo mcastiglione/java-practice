@@ -1,5 +1,6 @@
-package com.javapractice;
+package com.javapractice.model.bike;
 
+import com.javapractice.model.Rental;
 
 public class RentBikeHour implements Rental {
 
