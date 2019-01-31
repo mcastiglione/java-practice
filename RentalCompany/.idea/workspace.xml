@@ -1,78 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73aa6924-786a-41a0-b53d-7474a0e46879" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/model/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/model/Rental.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeDay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeHour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeHour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeWeek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarDay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarHour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarHour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarWeek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/utility/ConfigReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/utility/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/utility/ReadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentalFactory.java" afterDir="false" />
-    </list>
+    <list default="true" id="85b726e2-a132-4ee9-ae2a-14ea009bceaa" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1060164152">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="102" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="102" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/Company.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-140">
-              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentalFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,47 +20,25 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/javapractice/com/javapractice/Rent.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/Rent.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/familyRentalFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/RentData.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/FamilyRentalFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/RentalFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/RentBikeDay.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/RentBikeHour.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/RentBikeWeek.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/RentCarDay.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/RentCarWeek.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/RentCarHour.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/Rental.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/RentFamily.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/FamilyRental.java" />
-        <option value="$PROJECT_DIR$/src/com/javapractice/Company.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/FamilyRental.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentFamily.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/utility/Caller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/utility/ConfigReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javapractice/utility/ReadProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/Company.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentalFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/FamilyRental.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/Rental.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarWeek.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarHour.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarDay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeDay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeHour.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeWeek.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarDay.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarHour.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarWeek.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentalFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentFamily.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javapractice/Company.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="27" />
     <option name="width" value="1400" />
@@ -132,97 +49,76 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RentalCompany" type="462c0819:PsiDirectoryNode" />
+              <item name="RentalCompany-maven" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RentalCompany" type="462c0819:PsiDirectoryNode" />
+              <item name="RentalCompany-maven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RentalCompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RentalCompany" type="462c0819:PsiDirectoryNode" />
+              <item name="RentalCompany-maven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RentalCompany" type="462c0819:PsiDirectoryNode" />
+              <item name="RentalCompany-maven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="javapractice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RentalCompany" type="462c0819:PsiDirectoryNode" />
+              <item name="RentalCompany-maven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javapractice" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RentalCompany" type="462c0819:PsiDirectoryNode" />
+              <item name="RentalCompany-maven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="javapractice" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="bike" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RentalCompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="javapractice" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="car" type="462c0819:PsiDirectoryNode" />
+              <item name="RentalCompany-maven" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RentalCompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="RentalCompany-maven" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RentalCompany" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548802088004" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548954630108" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.javapractice" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources" />
-    </key>
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,23 +132,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Company">
-    <configuration name="Caller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javapractice.utility.Caller" />
-      <module name="RentalCompany" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.javapractice.utility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Company" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
       <option name="MAIN_CLASS_NAME" value="com.javapractice.Company" />
-      <module name="RentalCompany" />
+      <module name="RentalCompany-maven" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.javapractice.*" />
@@ -263,14 +147,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Caller" />
-      <item itemvalue="Application.Company" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Company" />
-        <item itemvalue="Application.Caller" />
       </list>
     </recent_temporary>
   </component>
@@ -279,250 +158,220 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="73aa6924-786a-41a0-b53d-7474a0e46879" name="Default Changelist" comment="" />
-      <created>1548705837959</created>
+      <changelist id="85b726e2-a132-4ee9-ae2a-14ea009bceaa" name="Default Changelist" comment="" />
+      <created>1548952896711</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1548705837959</updated>
+      <updated>1548952896711</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1682" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="0" width="1922" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26621786" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.497552" visible="true" weight="0.40486726" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.499388" weight="0.39933628" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50244796" side_tool="true" weight="0.40486726" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.499388" weight="0.32964602" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/javapractice/Company.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/javapractice/utility/ReadProperties.java</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>ClassLoader.class.getResourceAsStream(&quot;/config.properties&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ClassLoader.class.getResourceAsStream(&quot;config.properties&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ReadProperties.class.getClass().getClassLoader().getResourceAsStream(&quot;config.properties&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ReadProperties.class.getClass().getClassLoader().getResourceAsStream(&quot;../config.properties&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ReadProperties.class.getClass().getClassLoader().getResourceAsStream(&quot;/config.properties&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/config.properties" />
-    <entry file="file://$PROJECT_DIR$/RentalCompany.iml">
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/utility/ReadProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="585">
+          <caret line="47" column="1" selection-end-line="47" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/Rent.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/RentData.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/FamilyRentalFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/RentCarHour.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/RentCarWeek.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/RentCarDay.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/RentBikeWeek.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/RentBikeHour.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/RentBikeDay.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/RentalFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/RentFamily.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/FamilyRental.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/Company.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/javapractice/Rental.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/FamilyRental.java">
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/utility/RentalFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <caret line="10" column="21" lean-forward="true" selection-end-line="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentFamily.java">
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/utility/RentFamily.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="16" lean-forward="true" selection-end-line="53" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/utility/Caller.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/utility/ConfigReader.java">
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/model/FamilyRental.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/FamilyRental.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/model/Rental.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/Rental.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/model/car/RentCarDay.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="66" lean-forward="true" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+          <caret line="7" column="23" lean-forward="true" selection-end-line="52" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/utility/ReadProperties.java">
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/model/car/RentCarWeek.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="9" column="26" lean-forward="true" selection-end-line="51" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeDay.java">
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/model/car/RentCarHour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeHour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeWeek.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarDay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="465">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarHour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="405">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/car/RentCarWeek.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeHour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/model/bike/RentBikeWeek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/model/bike/RentBikeDay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" lean-forward="true" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/model/bike/RentBikeHour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" lean-forward="true" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/model/bike/RentBikeWeek.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="26" lean-forward="true" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/workspace/git/java-practice/RentalCompany/src/main/java/com/javapractice/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentFamily.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RentalCompany-maven.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/utility/ReadProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/utility/RentalFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="379">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -531,11 +380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javapractice/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="484">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -591,7 +437,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>RentalCompany</last-edited>
+          <last-edited>RentalCompany-maven</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -615,18 +461,6 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>KotlinJavaRuntime</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
