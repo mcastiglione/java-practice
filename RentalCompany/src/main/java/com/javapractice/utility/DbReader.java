@@ -14,7 +14,11 @@ public class DbReader {
     private HashMap<String, Integer> data = new HashMap<String,Integer>();
 
     private DbReader() {
-        init();
+        try {
+            init();
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
     }
 
     private static class DbHolder {
@@ -26,14 +30,12 @@ public class DbReader {
         return DbReader.DbHolder.INSTANCE;
     }
 
-    public void init() {
-        try {
-            this.connection();
-            this.load();
-        } catch (SQLException e) {
-            System.out.println(e);
+    public void init() throws SQLException {
+        this.connection();
+        this.initialize();
+        this.load();
+        conn.close();
         }
-    }
 
     public void connection() throws SQLException {
         // -------------------------------------------
@@ -42,6 +44,32 @@ public class DbReader {
         // -------------------------------------------
         String dbUrl = "jdbc:derby:demoDB;create=true";
         conn = DriverManager.getConnection(dbUrl);
+    }
+
+    public void initialize() throws SQLException {
+        Statement stmt = conn.createStatement();
+
+        // drop table
+        stmt.executeUpdate("Drop Table rentalfees");
+
+        // create table
+        stmt.executeUpdate("Create table rentalfees (name varchar(30) primary key, value int)");
+
+        // insert 2 rows
+        stmt.executeUpdate("insert into rentalfees values ('bike.hour'  , 5)");
+        stmt.executeUpdate("insert into rentalfees values ('bike.day'   , 20)");
+        stmt.executeUpdate("insert into rentalfees values ('bike.week'  ,60)");
+        stmt.executeUpdate("insert into rentalfees values ('car.hour'   ,20)");
+        stmt.executeUpdate("insert into rentalfees values ('car.day'    ,80)");
+        stmt.executeUpdate("insert into rentalfees values ('car.week'   ,300)");
+
+        // query
+        ResultSet rs = stmt.executeQuery("SELECT * FROM rentalfees");
+
+        // print out query result
+        while (rs.next()) {
+            System.out.printf("%s\t%d\n", rs.getString("name"), rs.getInt("value"));
+        }
     }
 
     public void load() throws SQLException {
@@ -55,6 +83,8 @@ public class DbReader {
             data.put(name,value);
         }
     }
+
+
 
     public Integer getProperty(String name) {
         return data.get(name);
