@@ -1,10 +1,10 @@
 package com.javapractice.model;
 
-import com.javapractice.utility.ReadProperties;
+import com.javapractice.utility.DbReader;
 
 public interface Rental {
 
-    public static final ReadProperties file = ReadProperties.getInstance();
+    public static final DbReader db = DbReader.getInstance();
 
     public boolean checkInfo();
     public void calculateFee(int vehicleQty, int timeQty);
