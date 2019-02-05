@@ -34,7 +34,6 @@ public class DbReader {
         this.connection();
         this.initialize();
         this.load();
-        conn.close();
         }
 
     public void connection() throws SQLException {
@@ -43,6 +42,7 @@ public class DbReader {
         // jdbc:derby:<local directory to save data>
         // -------------------------------------------
         String dbUrl = "jdbc:derby:demoDB;create=true";
+        DriverManager.registerDriver(new org.apache.derby.jdbc.EmbeddedDriver());
         conn = DriverManager.getConnection(dbUrl);
     }
 

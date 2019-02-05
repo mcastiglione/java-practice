@@ -6,10 +6,7 @@ import com.javapractice.utility.RentalFactory;
 import com.javapractice.utility.RentFamily;
 import com.javapractice.utility.DbReader;
 
-
-import java.sql.SQLException;
 import java.util.ArrayList;
-import com.javapractice.utility.JsonParser;
 
 public class Company {
     private static Rental rental;
@@ -61,7 +58,7 @@ public class Company {
         rentals.add(fRentalWeek);
 
         int discount = 30;
-
+        System.out.println("Family discount: " + discount + "%");
         fRental = new RentFamily();
         fRental.calculateFee(rentals, discount);
 
