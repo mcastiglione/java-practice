@@ -14,7 +14,7 @@ public class RentBikeDay implements Rental {
     private Integer costPerDay;
 
     public RentBikeDay() {
-        this.costPerDay = db.getProperty("bike.day");
+        this.costPerDay = Integer.parseInt(file.getProperty("bike.day"));
     }
 
     @Override

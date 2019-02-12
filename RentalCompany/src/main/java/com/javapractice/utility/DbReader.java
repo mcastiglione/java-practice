@@ -14,11 +14,12 @@ public class DbReader {
     private HashMap<String, Integer> data = new HashMap<String,Integer>();
 
     private DbReader() {
-        try {
-            init();
-        } catch (SQLException e) {
-            System.out.println(e);
-        }
+        //try {
+            //init();
+        //} catch (SQLException e) {
+        //    System.out.println(e);
+        //}
+        System.out.println("DbReader initialized");
     }
 
     private static class DbHolder {
@@ -84,7 +85,11 @@ public class DbReader {
         }
     }
 
-
+    public void createTable() throws SQLException {
+        Statement stmt = conn.createStatement();
+        // create table
+        stmt.executeUpdate("Create table rentalfees (name varchar(30) primary key, value int)");
+    }
 
     public Integer getProperty(String name) {
         return data.get(name);

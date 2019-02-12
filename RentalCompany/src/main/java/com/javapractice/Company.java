@@ -4,14 +4,11 @@ import com.javapractice.model.Rental;
 import com.javapractice.model.FamilyRental;
 import com.javapractice.utility.RentalFactory;
 import com.javapractice.utility.RentFamily;
-import com.javapractice.utility.DbReader;
-
 
 import java.util.ArrayList;
-import java.util.logging.FileHandler;
-import java.util.logging.Level;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+
+import org.apache.log4j.Logger;
+
 
 public class Company {
     private static Rental rental;
@@ -19,76 +16,57 @@ public class Company {
     private static ArrayList<Rental> rentals;
     private static RentalFactory rentalFactory;
 
-    private final static Logger logger = Logger.getLogger(Company.class.getName());
-
-    static {
-
-        LogManager.getLogManager().getLogger(Logger.GLOBAL_LOGGER_NAME).setLevel(Level.WARNING);
-
-        FileHandler fileTxt = null;
-
-        try {
-            fileTxt = new FileHandler("Logging.txt");
-        } catch (java.io.IOException e) {
-            System.out.println("Logging file not found!");
-        }
-
-        logger.addHandler(fileTxt);
-
-    }
+    final static Logger logger = Logger.getLogger(Company.class);
 
     public static void main(String[] args) {
 
-        try {
-            DbReader dbReader = DbReader.getInstance();
+        //DbReader dbReader = DbReader.getInstance();
 
-            rentalFactory = new RentalFactory();
+        rentalFactory = new RentalFactory();
 
-            //Case hour
-            rental = rentalFactory.getRental("bike", "hour");
-            rental.calculateFee(1,1);
-            System.out.println(rental);
+        //Case hour
+        rental = rentalFactory.getRental("bike", "hour");
+        rental.calculateFee(1,1);
+        logger.info(rental);
 
-            //Case day
-            rental = rentalFactory.getRental("bike", "day");
-            rental.calculateFee(1,2);
-            System.out.println(rental);
+        //Case day
+        rental = rentalFactory.getRental("bike", "day");
+        rental.calculateFee(1,2);
+        logger.info(rental);
 
-            //Case week
-            rental = rentalFactory.getRental( "bike", "week");
-            rental.calculateFee(1,1);
-            System.out.println(rental);
+        //Case week
+        rental = rentalFactory.getRental( "bike", "week");
+        rental.calculateFee(1,1);
+        logger.info(rental);
 
-            //Case family
-            rentals = new ArrayList<Rental>();
+        //Case family
+        rentals = new ArrayList<Rental>();
 
-            System.out.println("BEGIN family rental rentals");
+        System.out.println("BEGIN family rental rentals");
 
-            Rental fRentalHour = rentalFactory.getRental("car", "hour");
-            fRentalHour.calculateFee(1,3);
-            System.out.println(fRentalHour);
+        Rental fRentalHour = rentalFactory.getRental("car", "hour");
+        fRentalHour.calculateFee(1,3);
+        logger.info(fRentalHour);
 
 
-            Rental fRentalDay = rentalFactory.getRental("bike", "day");
-            fRentalDay.calculateFee(1,5);
-            System.out.println(fRentalDay);
+        Rental fRentalDay = rentalFactory.getRental("bike", "day");
+        fRentalDay.calculateFee(1,5);
+        logger.info(fRentalDay);
 
-            Rental fRentalWeek = rentalFactory.getRental("car", "week");
-            fRentalWeek.calculateFee(2,10);
-            System.out.println(fRentalWeek);
+        Rental fRentalWeek = rentalFactory.getRental("car", "week");
+        fRentalWeek.calculateFee(2,10);
+        logger.info(fRentalWeek);
 
-            rentals.add(fRentalHour);
-            rentals.add(fRentalDay);
-            rentals.add(fRentalWeek);
+        rentals.add(fRentalHour);
+        rentals.add(fRentalDay);
+        rentals.add(fRentalWeek);
 
-            int discount = 30;
-            System.out.println("Family discount: " + discount + "%");
-            fRental = new RentFamily();
-            fRental.calculateFee(rentals, discount);
+        int discount = 30;
+        logger.info("Family discount: " + discount + "%");
+        fRental = new RentFamily();
+        fRental.calculateFee(rentals, discount);
 
-            System.out.println(fRental);
-        } catch (Exception e) {
-            logger.warning(e.getMessage());
-        }
+        logger.info(fRental);
+
     }
 }

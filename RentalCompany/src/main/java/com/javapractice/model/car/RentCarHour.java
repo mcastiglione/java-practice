@@ -14,7 +14,7 @@ public class RentCarHour implements Rental {
     private Integer costPerHour;
 
     public RentCarHour() {
-        this.costPerHour = db.getProperty("car.hour");
+        this.costPerHour = Integer.parseInt(file.getProperty("car.hour"));
     }
 
     @Override
