@@ -1,6 +1,7 @@
 package com.javapractice.model.bike;
 
 import com.javapractice.model.Rental;
+import org.apache.log4j.Logger;
 
 public class RentBikeHour implements Rental {
 
@@ -12,8 +13,18 @@ public class RentBikeHour implements Rental {
 
     private Integer costPerHour;
 
+    final static Logger logger = Logger.getLogger(RentBikeHour.class);
+
+    String message;
+
     public RentBikeHour() {
-        this.costPerHour = Integer.parseInt(file.getProperty("bike.hour"));
+        try {
+            this.costPerHour = Integer.parseInt(file.getProperty("bike.hour"));
+        } catch (NumberFormatException e) {
+            message = "ERROR! costPerHour is " + this.costPerHour;
+            System.out.println(message);
+            logger.error(message);
+        }
     }
 
     @Override
@@ -22,10 +33,20 @@ public class RentBikeHour implements Rental {
         return false;
     }
 
-    public void calculateFee(int bikes, int hours) {
-        this.bikes = bikes;
-        this.hours = hours;
-        this.fee = this.bikes.doubleValue()*this.hours.doubleValue()*this.costPerHour.doubleValue();
+    public void calculateFee (int bikes, int hours) {
+        try {
+            this.bikes = bikes;
+            this.hours = hours;
+            this.fee = this.bikes.doubleValue()*this.hours.doubleValue()*this.costPerHour.doubleValue();
+        } catch (NullPointerException e) {
+            message = "ERROR! costPerHour is " + this.costPerHour + ", quantity of bikes: " + this.bikes + ", hours: " + this.hours;
+            logger.error(message);
+        }
+    }
+
+    public void logValues () {
+        message = "RentBikeHour; costPerHour is " + this.costPerHour + ", quantity of bikes: " + this.bikes + ", hours: " + this.hours;
+        logger.info(message);
     }
 
     @Override

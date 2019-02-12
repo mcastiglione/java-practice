@@ -1,7 +1,7 @@
 package com.javapractice.model.bike;
 
 import com.javapractice.model.Rental;
-import com.javapractice.utility.ReadProperties;
+import org.apache.log4j.Logger;
 
 public class RentBikeWeek implements Rental {
 
@@ -13,8 +13,18 @@ public class RentBikeWeek implements Rental {
 
     private Integer costPerWeek;
 
+    final static Logger logger = Logger.getLogger(RentBikeWeek.class);
+
+    String message;
+
     public RentBikeWeek() {
-        this.costPerWeek = Integer.parseInt(file.getProperty("bike.week"));
+        try {
+            this.costPerWeek = Integer.parseInt(file.getProperty("bike.week"));
+        } catch (NumberFormatException e) {
+            message = "ERROR! costPerWeek is " + this.costPerWeek;
+            System.out.println(message);
+            logger.error(message);
+        }
     }
 
     @Override
@@ -24,9 +34,19 @@ public class RentBikeWeek implements Rental {
     }
 
     public void calculateFee(int bikes, int weeks) {
-        this.bikes = bikes;
-        this.weeks = weeks;
-        this.fee = this.bikes.doubleValue()*this.weeks.doubleValue()*costPerWeek.doubleValue();
+        try {
+            this.bikes = bikes;
+            this.weeks = weeks;
+            this.fee = this.bikes.doubleValue()*this.weeks.doubleValue()*costPerWeek.doubleValue();
+        } catch (NullPointerException e) {
+            message = "ERROR! costPerWeek is " + this.costPerWeek + ", quantity of bikes: " + this.bikes + ", weeks: " + this.weeks;
+            logger.error(message);
+        }
+    }
+
+    public void logValues() {
+        message = "RentBikeWeek; costPerWeek is " + this.costPerWeek + ", quantity of bikes: " + this.bikes + ", weeks: " + this.weeks;
+        logger.info(message);
     }
 
     public Double getFee() {
