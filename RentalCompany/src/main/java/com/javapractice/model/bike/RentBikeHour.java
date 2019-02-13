@@ -1,7 +1,9 @@
 package com.javapractice.model.bike;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.javapractice.model.Rental;
-import org.apache.log4j.Logger;
 
 public class RentBikeHour implements Rental {
 
@@ -13,7 +15,7 @@ public class RentBikeHour implements Rental {
 
     private Integer costPerHour;
 
-    final static Logger logger = Logger.getLogger(RentBikeHour.class);
+    final static Logger LOG = LoggerFactory.getLogger(RentBikeHour.class);
 
     String message;
 
@@ -23,12 +25,12 @@ public class RentBikeHour implements Rental {
         } catch (NumberFormatException e) {
             message = "ERROR! costPerHour is " + this.costPerHour;
             System.out.println(message);
-            logger.error(message);
+            LOG.error(message);
         }
     }
 
     @Override
-    public boolean checkInfo() {
+    public boolean isInfoOK() {
         // TODO Auto-generated method stub
         return false;
     }
@@ -40,13 +42,13 @@ public class RentBikeHour implements Rental {
             this.fee = this.bikes.doubleValue()*this.hours.doubleValue()*this.costPerHour.doubleValue();
         } catch (NullPointerException e) {
             message = "ERROR! costPerHour is " + this.costPerHour + ", quantity of bikes: " + this.bikes + ", hours: " + this.hours;
-            logger.error(message);
+            LOG.error(message);
         }
     }
 
     public void logValues () {
         message = "RentBikeHour; costPerHour is " + this.costPerHour + ", quantity of bikes: " + this.bikes + ", hours: " + this.hours;
-        logger.info(message);
+        LOG.info(message);
     }
 
     @Override

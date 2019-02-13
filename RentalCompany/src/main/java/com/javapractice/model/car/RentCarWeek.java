@@ -1,7 +1,8 @@
 package com.javapractice.model.car;
 
 import com.javapractice.model.Rental;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RentCarWeek implements Rental {
 
@@ -13,7 +14,7 @@ public class RentCarWeek implements Rental {
 
     private Integer costPerWeek;
 
-    final static Logger logger = Logger.getLogger(RentCarWeek.class);
+    final static Logger LOG = LoggerFactory.getLogger(RentCarWeek.class);
 
     String message;
 
@@ -23,12 +24,12 @@ public class RentCarWeek implements Rental {
         } catch (NumberFormatException e) {
             message = "ERROR! costPerWeek is " + this.costPerWeek;
             System.out.println(message);
-            logger.error(message);
+            LOG.error(message);
         }
     }
 
     @Override
-    public boolean checkInfo() {
+    public boolean isInfoOK() {
         // TODO Auto-generated method stub
         return false;
     }
@@ -41,13 +42,13 @@ public class RentCarWeek implements Rental {
         } catch (NullPointerException e) {
             message = "ERROR! costPerWeek is " + this.costPerWeek + ", quantity of cars: " + this.cars + ", weeks: " + this.weeks;
             System.out.println(message);
-            logger.error(message);
+            LOG.error(message);
         }
     }
 
     public void logValues() {
         message = "RentCarWeek; costPerWeek is " + this.costPerWeek + ", quantity of cars: " + this.cars + ", weeks: " + this.weeks;
-        logger.info(message);
+        LOG.info(message);
     }
 
     public Double getFee() {

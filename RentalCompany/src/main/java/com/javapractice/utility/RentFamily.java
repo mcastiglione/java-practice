@@ -1,22 +1,24 @@
 package com.javapractice.utility;
 
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.javapractice.model.FamilyRental;
 import com.javapractice.model.Rental;
-import org.apache.log4j.Logger;
-
-import java.util.ArrayList;
 
 public class RentFamily implements FamilyRental {
 
     private Double fee = 0.0;
 
-    private ArrayList<Rental> rentals;
+    private List<Rental> rentals;
 
     private Integer discount;
 
     private Integer Qty = 0;
 
-    final static Logger logger = Logger.getLogger(RentFamily.class);
+    final static Logger LOG = LoggerFactory.getLogger(RentFamily.class);
 
     String message;
 
@@ -24,15 +26,11 @@ public class RentFamily implements FamilyRental {
     }
 
     @Override
-    public boolean checkInfo() {
-        if (Qty > 5 || Qty < 3) {
-            return false;
-        } else {
-            return true;
-        }
+    public boolean isInfoOK() {
+        return (Qty > 5 || Qty < 3)? false: true;
     }
 
-    public void calculateFee(ArrayList<Rental> rentals, int discount) {
+    public void calculateFee(List<Rental> rentals, int discount) {
         try {
             this.rentals = rentals;
             this.discount = discount;
@@ -43,10 +41,10 @@ public class RentFamily implements FamilyRental {
             this.rentals.stream().forEach(y->this.Qty += y.getQty());
         }
         catch (NullPointerException e) {
-            logger.error("RentFamily Error! At least one rental has null values");
-            logger.error("Rentals go:");
+            LOG.error("RentFamily Error! At least one rental has null values");
+            LOG.error("Rentals go:");
             this.rentals.stream().forEach(y->y.logValues());
-            logger.error("Finish RentFamily error;");
+            LOG.error("Finish RentFamily error;");
         }
     }
 

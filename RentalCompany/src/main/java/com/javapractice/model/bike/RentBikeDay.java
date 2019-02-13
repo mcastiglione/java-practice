@@ -1,7 +1,9 @@
 package com.javapractice.model.bike;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.javapractice.model.Rental;
-import org.apache.log4j.Logger;
 
 public class RentBikeDay implements Rental {
 
@@ -13,7 +15,7 @@ public class RentBikeDay implements Rental {
 
     private Integer costPerDay;
 
-    final static Logger logger = Logger.getLogger(RentBikeDay.class);
+    final static Logger LOG = LoggerFactory.getLogger(RentBikeDay.class);
 
     String message;
 
@@ -23,12 +25,12 @@ public class RentBikeDay implements Rental {
         } catch (NumberFormatException e) {
             message = "ERROR! costPerDay is " + this.costPerDay;
             System.out.println(message);
-            logger.error(message);
+            LOG.error(message);
         }
     }
 
     @Override
-    public boolean checkInfo() {
+    public boolean isInfoOK() {
         // TODO Auto-generated method stub
         return false;
     }
@@ -40,13 +42,13 @@ public class RentBikeDay implements Rental {
             this.fee = this.bikes.doubleValue() * this.days.doubleValue() * costPerDay.doubleValue();
         } catch (NullPointerException e) {
             message = "ERROR! costPerDay is " + this.costPerDay + ", quantity of bikes: " + this.bikes + ", days: " + this.days;
-            logger.error(message);
+            LOG.error(message);
         }
     }
 
     public void logValues () {
         message = "RentBikeDay; costPerDay is " + this.costPerDay + ", quantity of bikes: " + this.bikes + ", days: " + this.days;
-        logger.info(message);
+        LOG.info(message);
     }
 
 

@@ -1,7 +1,8 @@
 package com.javapractice.model.bike;
 
 import com.javapractice.model.Rental;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RentBikeWeek implements Rental {
 
@@ -13,7 +14,7 @@ public class RentBikeWeek implements Rental {
 
     private Integer costPerWeek;
 
-    final static Logger logger = Logger.getLogger(RentBikeWeek.class);
+    final static Logger logger = LoggerFactory.getLogger(RentBikeWeek.class);
 
     String message;
 
@@ -28,7 +29,7 @@ public class RentBikeWeek implements Rental {
     }
 
     @Override
-    public boolean checkInfo() {
+    public boolean isInfoOK() {
         // TODO Auto-generated method stub
         return false;
     }

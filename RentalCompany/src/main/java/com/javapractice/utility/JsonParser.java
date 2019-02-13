@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 
 import java.io.FileWriter;
 
+@Deprecated
 public class JsonParser {
 
     private String fileName;
@@ -30,15 +31,6 @@ public class JsonParser {
 
         return person;
     }
-
-    /* public void toJSON(Object object) {
-        try {
-            gson.toJson(object, new FileWriter(fileName));
-        } catch (java.io.IOException e) {
-            System.out.println(e);
-        }
-
-    } */
 
     public static void main(String[] args) {
         JsonParser jsonParser = new JsonParser("src/main/resources/test.json");
